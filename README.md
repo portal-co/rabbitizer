@@ -53,3 +53,6 @@ NOTE: Installing the development version is not recommended. Proceed at your own
   - Official documentation from Toshiba: <https://wiki.qemu.org/images/2/2a/C790.pdf>
   - VU instruction manual: <http://lukasz.dk/files/vu-instruction-manual.pdf>
   - GNU binutils: <https://github.com/bminor/binutils-gdb/blob/master/opcodes/mips-opc.c>
+
+- PowerPC 750CL
+  - <https://fail0verflow.com/media/files/ppc_750cl.pdf>

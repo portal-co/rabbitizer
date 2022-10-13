@@ -3,6 +3,7 @@
 
 #include "instructions/RabbitizerInstructionR5900.h"
 
+
 #define RABBITIZER_DEF_INSTR_ID(prefix, caseBits, name, ...)    \
     case (caseBits):                                            \
         self->uniqueId = RABBITIZER_INSTR_ID_##prefix##_##name; \

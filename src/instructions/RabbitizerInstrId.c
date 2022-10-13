@@ -13,6 +13,7 @@ const char *RabbitizerInstrId_Names[] = {
 #include "instructions/instr_id/RabbitizerInstrId_cpu.inc"
 #include "instructions/instr_id/RabbitizerInstrId_rsp.inc"
 #include "instructions/instr_id/RabbitizerInstrId_r5900.inc"
+#include "instructions/instr_id/RabbitizerInstrId_powerpc.inc"
 };
 
 #undef RABBITIZER_DEF_INSTR_ID
@@ -23,6 +24,7 @@ const char *RabbitizerInstrId_getOpcodeName(RabbitizerInstrId uniqueId) {
     assert(uniqueId != RABBITIZER_INSTR_ID_cpu_MAX);
     assert(uniqueId != RABBITIZER_INSTR_ID_rsp_MAX);
     assert(uniqueId != RABBITIZER_INSTR_ID_r5900_MAX);
+    assert(uniqueId != RABBITIZER_INSTR_ID_powerpc_MAX);
 
     return RabbitizerInstrId_Names[uniqueId];
 }

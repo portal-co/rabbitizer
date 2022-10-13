@@ -13,6 +13,7 @@ const RabbitizerInstrDescriptor RabbitizerInstrDescriptor_Descriptors[] = {
 #include "instructions/instr_id/RabbitizerInstrId_cpu.inc"
 #include "instructions/instr_id/RabbitizerInstrId_rsp.inc"
 #include "instructions/instr_id/RabbitizerInstrId_r5900.inc"
+#include "instructions/instr_id/RabbitizerInstrId_powerpc.inc"
 };
 
 #undef RABBITIZER_DEF_INSTR_ID

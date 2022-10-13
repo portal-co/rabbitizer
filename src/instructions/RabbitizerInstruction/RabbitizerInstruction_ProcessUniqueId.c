@@ -6,6 +6,7 @@
 #include "common/RabbitizerConfig.h"
 #include "instructions/RabbitizerRegister.h"
 
+
 #define RABBITIZER_DEF_INSTR_ID(prefix, caseBits, name, ...)    \
     case (caseBits):                                            \
         self->uniqueId = RABBITIZER_INSTR_ID_##prefix##_##name; \

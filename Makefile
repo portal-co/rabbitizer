@@ -18,7 +18,7 @@ LDFLAGS         := -Lbuild -lrabbitizer
 LDXXFLAGS       := -Lbuild -lrabbitizerpp
 WARNINGS        := -Wall -Wextra -Wpedantic
 # WARNINGS        := -Wall -Wextra -Wpedantic -Wpadded
-WARNINGS        += -Werror=vla -Werror=switch -Werror=implicit-fallthrough -Werror=unused-function -Werror=unused-parameter -Werror=shadow
+WARNINGS        += -Werror=vla -Werror=switch -Werror=implicit-fallthrough -Werror=unused-function -Werror=unused-parameter -Werror=shadow -Wno-gnu-binary-literal
 WARNINGS_C      := -Werror=implicit-function-declaration -Werror=incompatible-pointer-types
 WARNINGS_CXX    :=
 
