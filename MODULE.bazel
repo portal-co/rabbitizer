@@ -1,3 +1,4 @@
+module(name = "rabbitizer")
 bazel_dep(name = "rules_rust", version = "0.44.0")
 
 rust = use_extension("@rules_rust//rust:extensions.bzl", "rust")
