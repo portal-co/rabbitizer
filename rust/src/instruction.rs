@@ -22,7 +22,7 @@ pub struct Instruction {
     pub flags: u32,
 }
 
-#[link(name = "rabbitizer", kind = "static")]
+// #[link(name = "rabbitizer", kind = "static")]
 extern "C" {
     fn RabbitizerInstrId_getOpcodeName(
         unique_id: instr_id_enum::InstrId,

@@ -1,0 +1,20 @@
+load("@rules_rust//rust:defs.bzl", "rust_library", "rust_doc")
+
+package(default_visibility = ["//visibility:public"])
+
+cc_library(
+    name = "rabbitizer",
+    srcs = glob(["src/**/*.c","src/**/*.cpp"]),
+    hdrs = glob(["tables/**/*.h","tables/**/*.inc","include/**/*.h","cplusplux/include/**/*.hpp"]),
+    includes = ["tables","include","cplusplus/include"]
+)
+rust_library(
+    name = "rust",
+    crate_name = "rabbitizer",
+    deps = [
+        "@crates//:num_enum",
+        ":rabbitizer",
+    ],
+    crate_root = "rust/src/lib.rs",
+    srcs = glob(["rust/src/*.rs"])
+)
