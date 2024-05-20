@@ -7,13 +7,17 @@ cc_library(
     srcs = glob([
         "src/**/*.c",
         "src/**/*.cpp",
+        "cplusplus/src/**/*.cpp",
     ]),
     hdrs = glob([
         "tables/**/*.h",
         "tables/**/*.inc",
         "include/**/*.h",
         "cplusplus/include/**/*.hpp",
-    ]),
+    ]) + [
+        "cplusplus/include/rabbitizer.hpp",
+        "include/rabbitizer.h",
+    ],
     copts = [
         "-Icplusplus/include",
         "-Iinclude",
