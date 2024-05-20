@@ -1,6 +1,6 @@
 module(
     name = "rabbitizer",
-    version = "1.10.3",
+    version = "1.10.4",
     compatibility_level = 0,
 )
 bazel_dep(name = "rules_rust", version = "0.44.0")
