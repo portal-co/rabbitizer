@@ -14,10 +14,7 @@ cc_library(
         "tables/**/*.inc",
         "include/**/*.h",
         "cplusplus/include/**/*.hpp",
-    ]) + [
-        "cplusplus/include/rabbitizer.hpp",
-        "include/rabbitizer.h",
-    ],
+    ]),
     copts = [
         "-Icplusplus/include",
         "-Iinclude",
