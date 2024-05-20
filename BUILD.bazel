@@ -14,14 +14,15 @@ cc_library(
         "include/**/*.h",
         "cplusplus/include/**/*.hpp",
     ]),
+    copts = [
+        "-Icplusplus/include",
+        "-Iinclude",
+        "-Itables",
+    ],
     includes = [
         "cplusplus/include",
         "include",
         "tables",
-    ],   copts= [
-        "-Icplusplus/include",
-        "-Iinclude",
-        "-Itables",
     ],
 )
 
