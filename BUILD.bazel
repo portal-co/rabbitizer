@@ -5,7 +5,7 @@ package(default_visibility = ["//visibility:public"])
 cc_library(
     name = "rabbitizer",
     srcs = glob(["src/**/*.c","src/**/*.cpp"]),
-    hdrs = glob(["tables/**/*.h","tables/**/*.inc","include/**/*.h","cplusplux/include/**/*.hpp"]),
+    hdrs = glob(["tables/**/*.h","tables/**/*.inc","include/**/*.h","cplusplus/include/**/*.hpp"]),
     includes = ["tables","include","cplusplus/include"]
 )
 rust_library(
